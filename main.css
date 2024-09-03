@@ -1,0 +1,123 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+}
+
+.logo {
+    display: inline;
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+#cabecalho .navbar-brand, .navbar-brand:hover {
+    color: white;
+    font-family: "Rubik Mono One", system-ui;
+    font-size: 25px;
+    font-style: normal;
+}
+
+#cabecalho .nav .nav-link {
+    color: white;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: rgb(180, 0, 0);
+    font-weight: bolder;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+.section-title {
+    font-family: "Rubik Mono One", system-ui;
+    font-style: normal;
+}
+
+#sobre-o-clube, #destaques {
+    background-color: rgb(218, 216, 216);
+}
+
+.text-colored {
+    color: rgb(180, 0, 0);
+}
+
+.nav-cardapio .nav-link.active {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.nav-cardapio .nav-link.active:hover {
+    color: white;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: rgb(0, 0, 0);
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+#fale-conosco button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 32px;
+}
+.nos-acompanhe {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.social-links img {
+    height: 50px;
+    margin-right: 8px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 200px;
+    }
+
+    .logo img {
+        height: 40px;
+        margin-right: 5px;
+    }
+
+    #cabecalho .navbar-brand, .navbar-brand:hover {
+        color: white;
+        font-family: "Rubik Mono One", system-ui;
+        font-size: 16px;
+        font-style: normal;
+    }
+}

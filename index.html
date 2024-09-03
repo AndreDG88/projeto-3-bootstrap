@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links para o google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <!-- links para CSS e Bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+    <!--link favicon-->
+    <link rel="shortcut icon" href="/images/Favicon Pokeball.png" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <!-- cabeçalho e menu -->
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <div class="logo">
+                <img src="/images/Icon Pokeball.png" alt="Icone Logo site">
+            </div>
+            <a href="/index.html"></a>
+                <h1 class="navbar-brand m-0">POKÉMON <span class="text-colored">CLUB</span></h1>
+            </a>
+            <!-- bottão para mobile -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item">
+                        <a href="#sobre-o-clube" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre o Clube
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#destaques" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Destaques
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale Conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth="true">
+        <!-- configuração do carousel -->
+        <section id="sobre-o-clube">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="w-100" src="/images/slides/slide1.png" alt="Foto de destaque de cartas.">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="w-100" src="/images/slides/slide2.png" alt="Foto de destaque de cartas.">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="w-100" src="/images/slides/slide3.png" alt="Foto de destaque de cartas.">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <!-- conteúdo sobre -->
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="/images/imagem-club.png" class="d-block w-100 rounded" alt="Foto do espaço interno do clube.">
+                        </div>
+                        <div class="col-md-7 mat-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">o Clube</span></h2>
+                            <P>
+                                Se você é um fã do universo Pokémon ou está apenas começando sua jornada no mundo das cartas, o Pokémon Club é o lugar perfeito para você. Nosso objetivo é proporcionar um espaço acolhedor e vibrante para todos os apaixonados por Pokémon, oferecendo uma gama completa de atividades e recursos para aprimorar suas habilidades e conectar-se com outros fãs
+                            </P>
+                            <h3 class="section-title">Sobre <span class="text-colored">o Espaço</span></h3>
+                            <p>
+                                Nosso espaço é projetado para maximizar sua experiência com zonas de jogo confortáveis, áreas para troca de cartas, e um ambiente animado e interativo. Nosso espaço é projetado para maximizar sua experiência com zonas de jogo confortáveis, áreas para troca de cartas, e um ambiente animado e interativo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- conteúdo sobre os eventos -->
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row pt-5 pb-5">
+                    <h2 class="section-title text-center fs-1">O que rola <span class="text-colored">no Club</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="/images/eventos/aulas-workshop.png" class="d-block w-100 rounded md-2" alt="Aulas e Workshop">
+                        <h3 class="section-title text-colored fs-4 mt-5">Aulas e Workshops</h3>
+                        <p>
+                            Para aqueles que estão começando ou querem aprimorar suas habilidades, oferecemos aulas e workshops regulares. Nossos instrutores experientes são apaixonados por Pokémon e estão prontos para compartilhar suas dicas e truques. As aulas cobrem desde as regras básicas até estratégias avançadas, garantindo que você tenha todas as ferramentas necessárias para se destacar no campo de batalha.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/images/eventos/grupo-trocas.png" class="d-block w-100 rounded md-2" alt="Grupo de Trocas">
+                        <h3 class="section-title text-colored fs-4 mt-5">Grupos de Troca</h3>
+                        <p>
+                            Está sempre em busca de novas cartas para sua coleção? Junte-se ao nosso Grupo de Trocas! Aqui, você encontrará uma comunidade animada de colecionadores e jogadores dispostos a trocar cartas e fazer novas amizades. Nossos encontros são a oportunidade perfeita para expandir sua coleção, encontrar cartas raras e negociar com outros fãs do universo Pokémon. Venha fazer parte do nosso grupo e descubra como a troca de cartas pode ser uma experiência divertida!
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/images/eventos/competicoes.png" class="d-block w-100 rounded md-2" alt="Clube de Competições">
+                        <h3 class="section-title text-colored fs-4 mt-5">Competições Oficiais</h3>
+                        <p>
+                            Se você é um estrategista em busca de desafios emocionantes, nosso grupo de Competições é o lugar ideal para você! Participar das nossas competições é a chance perfeita para testar suas habilidades, enfrentar outros jogadores apaixonados e subir no ranking. Oferecemos torneios regulares, eventos especiais e uma comunidade vibrante para você se destacar e se divertir. Venha competir, aprender e celebrar o mundo das cartas Pokémon conosco!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- conteúdo sobre Destaques -->
+        <section id="destaques" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Confira nossos <span class="text-colored">Destaques</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#fabulas-nebulosas" class="fw-bold text-start nav-link text-colored active">Fábulas Nebulosas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#mascaras-do-crepusculo" class="fw-bold text-start nav-link text-colored">Máscaras do Crepúsculo</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#forcas-temporais" class="fw-bold text-start nav-link text-colored">Forças Temporais</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <!-- Fábulas Nebulosas -->
+                            <div class="tab-pane active" id="fabulas-nebulosas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="/images/Destaques/TREINADOR-AVANÇADO-POKEMON-FÁBULAS-NEBULOSAS.png" class="d-block w-100 rounded" alt="TREINADOR AVANÇADO POKÉMON FÁBULAS NEBULOSAS">
+                                        <h5 class="text-colored fw-bold mt-2">Treinador Avançado Pokémon Fábulas Nebulosas</h5>
+                                        <p>
+                                            Boatos rolam soltos e memórias se embaralham conforme as batidas do tempo ecoam na terra de Kitakami! O cair da noite se aproxima com a presença de uma figura malevolente: Pecharunt ex comanda os Três Leais, Okidogi ex, Munkidori ex e Fezandipiti ex, arquitetando a perfeita execução de suas ordens nefastas.
+                                        </p>
+                                        <P>
+                                            Contém 121 unidades de cartas no formato 63mm x 88mm
+                                        </P>
+                                        <a href="https://www.copagloja.com.br/treinador-avancado-pokemon-fabulas-nebulosas/p"  class="btn btn-outline-dark btn-md">Saiba +</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="/images/Destaques/BLISTER-TRIPLO-POKEMON-FABULAS-NEBULOSAS.png" class="d-block w-100 rounded" alt="BLISTER TRIPLO POKÉMON FABULAS NEBULOSAS">
+                                        <h5 class="text-colored fw-bold mt-2">Blister Triplo Pokémon Fabulas Nebulosas</h5>
+                                        <p>
+                                            "Participe da mais nova ação do Pokémon Estampas Ilustradas com três pacotes de booster incríveis da nova expansão Escarlate e Violeta — Fábulas Nebulosas, uma carta holográfica promocional especial e uma carta codificada para o Pokémon Estampas Ilustradas Live!"
+                                        </p>
+                                        <P>
+                                            Contém 19 unidades de cartas no formato 63mm x 88mm
+                                        </P>
+                                        <a href="https://www.copagloja.com.br/blister-triplo-fabulas-nebulosas/p"  class="btn btn-outline-dark btn-md">Saiba +</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="/images/Destaques/BOX-POKEMON-GRENINJA-EX.png" class="d-block w-100 rounded" alt="BOX POKÉMON GRENINJA EX">
+                                        <h5 class="text-colored fw-bold mt-2">Box Pokémon Greninja EX</h5>
+                                        <p>
+                                            Nela, você encontrará uma carta promocional Ilustração Rara Especial de Greninja ex, uma carta extragrande de Greninja ex, além de cartas holográficas de Froakie e Frogadier para completar toda a cadeia de Evolução. E tem mais! Com os pacotes de booster do Pokémon Estampas Ilustradas inclusos, você encontrará ainda mais Pokémon incríveis para a sua próxima batalha!
+                                        </p>
+                                        <P>
+                                            Contém 38 unidades de cartas no formato 63mm x 88mm e 1 unidades de carta no formato 133mm x 187mm..
+                                        </P>
+                                        <a href="https://www.copagloja.com.br/box-pokemon-greninja-ex/p"  class="btn btn-outline-dark btn-md">Saiba +</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Máscaras do Crepúsculo -->
+                            <div class="tab-pane" id="mascaras-do-crepusculo">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="/images/Destaques/Pokemon-TCG-Scarlet---Violet--Twilight-Masquerade-Advanced-Trainer-Box_PTBR.png" class="d-block w-100 rounded" alt="TREINADOR AVANÇADO POKÉMON FÁBULAS NEBULOSAS">
+                                        <h5 class="text-colored fw-bold mt-2">Treinador Avançado Pokémon TCG Escarlet e Violeta 6 Máscaras de Crepúsculo</h5>
+                                        <p>
+                                            Desvende o mistério do Pokémon Lendário mascarado Ogerpon, que aparece como Pokémon ex Tera de quatro temíveis tipos diferentes, e una forças com mais Pokémon recém-descobertos, como Ursaluna Lua Sangrenta ex e Sinistcha ex.
+                                        </p>
+                                        <P>
+                                            Contém 121 unidades de cartas no formato 63mm x 88mm
+                                        </P>
+                                        <a href="https://www.copagloja.com.br/treinador-avancado-pokemon-escarlate-e-violeta-6-mascaras-de-crepusculo/p"  class="btn btn-outline-dark btn-md">Saiba +</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="/images/Destaques/Pokemon-TCG-Scarlet---Violet--Twilight-Masquerade-Booster-Display_PTBR.png" class="d-block w-100 rounded" alt="BLISTER TRIPLO POKÉMON FABULAS NEBULOSAS">
+                                        <h5 class="text-colored fw-bold mt-2">Box Display Pokémon TCG Escarlet e Violeta 6 Máscaras de Crepúsculo</h5>
+                                        <p>
+                                            Cada vez mais poderosos, Greninja, Dragapult e Magcargo chegam para impressionar como Pokémon ex Tera, e mais cartas ACE SPEC se juntam às festividades na expansão Escarlate e Violeta — Máscaras do Crepúsculo do Pokémon Estampas Ilustradas!"
+                                        </p>
+                                        <P>
+                                            Contém 216 unidades de cartas no formato 63mm x 88mm
+                                        </P>
+                                        <a href="https://www.copagloja.com.br/box-display-pokemon-escarlate-e-violeta-6-mascaras-de-crepusculo/p"  class="btn btn-outline-dark btn-md">Saiba +</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="/images/Destaques/Pokemon-TCG-Scarlet---Violet--Twilight-Masquerade-Three-Booster-Blister---Toxel_PTBR.png" class="d-block w-100 rounded" alt="BOX POKÉMON GRENINJA EX">
+                                        <h5 class="text-colored fw-bold mt-2">Triple Pack Pokémon Toxel TCG Escarlet e Violeta 6 Máscaras de Crepúsculo</h5>
+                                        <p>
+                                            Cada vez mais poderosos, Greninja, Dragapult e Magcargo chegam para impressionar como Pokémon ex Tera, e mais cartas ACE SPEC se juntam às festividades na expansão Escarlate e Violeta — Máscaras do Crepúsculo do Pokémon Estampas Ilustradas!
+                                        </p>
+                                        <P>
+                                            Contém 19 unidades de cartas no formato 63mm x 88mm"
+                                        </P>
+                                        <a href="https://www.copagloja.com.br/triple-pack-pokemon-toxel-escarlate-e-violeta-6-mascaras-de-crepusculo/p"  class="btn btn-outline-dark btn-md">Saiba +</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Forças Temporais -->
+                            <div class="tab-pane" id="forcas-temporais">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="/images/Destaques/Pokemon-TCG-Scarlet---Violet--Temporal-Forces-Booster-Bundle_PTBR.png" class="d-block w-100 rounded" alt="TREINADOR AVANÇADO POKÉMON FÁBULAS NEBULOSAS">
+                                        <h5 class="text-colored fw-bold mt-2">Mini Display Pokémon TCG Escarlate e Violeta 5 Forças Temporais</h5>
+                                        <p>
+                                            Treinadores de Pokémon de todos os cantos se preparam para o retorno das cartas ACE SPEC que apresentam efeitos únicos e poderosos. Uma fenda no tempo libera bestas ferozes e visões cibernéticas para as batalhas na expansão Escarlate e Violeta — Forças Temporais do Pokémon Estampas Ilustradas!
+                                        </p>
+                                        <P>
+                                            Contém 108 unidades de cartas no formato 63mm x 88mm"
+                                        </P>
+                                        <a href="https://www.copagloja.com.br/mini-display-pokemon-escarlate-e-violeta-5-forcas-temporais/p"  class="btn btn-outline-dark btn-md">Saiba +</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="/images/Destaques/Pokemon-TCG-Scarlet---Violet--Temporal-Forces-Booster-Bundle_PTBR.png" class="d-block w-100 rounded" alt="TREINADOR AVANÇADO POKÉMON FÁBULAS NEBULOSAS">
+                                        <h5 class="text-colored fw-bold mt-2">Mini Display Pokémon TCG Escarlate e Violeta 5 Forças Temporais</h5>
+                                        <p>
+                                            Treinadores de Pokémon de todos os cantos se preparam para o retorno das cartas ACE SPEC que apresentam efeitos únicos e poderosos. Uma fenda no tempo libera bestas ferozes e visões cibernéticas para as batalhas na expansão Escarlate e Violeta — Forças Temporais do Pokémon Estampas Ilustradas!
+                                        </p>
+                                        <P>
+                                            Contém 108 unidades de cartas no formato 63mm x 88mm"
+                                        </P>
+                                        <a href="https://www.copagloja.com.br/mini-display-pokemon-escarlate-e-violeta-5-forcas-temporais/p"  class="btn btn-outline-dark btn-md">Saiba +</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="/images/Destaques/Pokemon-TCG-Scarlet---Violet--Temporal-Forces-Booster-Bundle_PTBR.png" class="d-block w-100 rounded" alt="TREINADOR AVANÇADO POKÉMON FÁBULAS NEBULOSAS">
+                                        <h5 class="text-colored fw-bold mt-2">Mini Display Pokémon TCG Escarlate e Violeta 5 Forças Temporais</h5>
+                                        <p>
+                                            Treinadores de Pokémon de todos os cantos se preparam para o retorno das cartas ACE SPEC que apresentam efeitos únicos e poderosos. Uma fenda no tempo libera bestas ferozes e visões cibernéticas para as batalhas na expansão Escarlate e Violeta — Forças Temporais do Pokémon Estampas Ilustradas!
+                                        </p>
+                                        <P>
+                                            Contém 108 unidades de cartas no formato 63mm x 88mm"
+                                        </P>
+                                        <a href="https://www.copagloja.com.br/mini-display-pokemon-escarlate-e-violeta-5-forcas-temporais/p"  class="btn btn-outline-dark btn-md">Saiba +</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- conteúdo Sessão Contato -->
+        <Section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">Conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome:</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail:</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional):</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Seu mensagem:</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes Sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Teste de Exemplo, Nº 123, Bairro São Não sei - Lugar Qualquer - SL
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Section>
+    </div>
+    <!--rodapé da página-->
+    <footer id="social-links">
+        <div class="nos-acompanhe">
+            <ul class="social-links">
+                <li>
+                    <a href="https://www.instagram.com/andre.soares.designer/" title="Siga-nos no Instagram">
+                        <img src="/icones/instagram.png" alt="Logo do Instagram" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/AndreDG88" title="Siga-nos no GitHub">
+                        <img src="/icones/github-mark-white.png" alt="Logo do GitHub" />
+                    </a>
+                </li>
+            </ul>
+            <p>
+                Página ficticia, apenas para fins de estudo em programação
+            </p>
+        </div>
+        <div>
+            <p>
+                &copy; Pokémon Club - Todos os direitos reservados - 2024.
+                Desenvolvido por André Soares
+            </p>
+        </div>
+    <!-- links para JavaScript e Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
